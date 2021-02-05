@@ -1,0 +1,22 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "Front End Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tumeex/Front-End.git"
+  },
+  "author": "TK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tumeex/Front-End/issues"
+  },
+  "homepage": "https://github.com/tumeex/Front-End#readme",
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
