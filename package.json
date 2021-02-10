@@ -18,5 +18,8 @@
   "homepage": "https://github.com/tumeex/Front-End#readme",
   "dependencies": {
     "node-sass": "^4.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
