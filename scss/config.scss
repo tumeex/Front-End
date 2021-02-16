@@ -2,7 +2,7 @@ $primary-color: #444;
 $secondary-color: #6189CE;
 $show-home-image: true;
 $home-img: url(../img/bg.jpg);
-$bg-opacity: 0.8;
+$bg-opacity: 0.7;
 
 @mixin easeO {
     transition: all 0.4s ease-out;
@@ -26,5 +26,29 @@ $bg-opacity: 0.8;
                 background: rgba($primary-color, $bg-opacity);
             }
         }
+    }
+}
+
+@mixin medSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin medMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin medLg {
+    @media screen and (min-width: 769px) and (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin medXl {
+    @media screen and (min-width: 1281px) {
+        @content;
     }
 }

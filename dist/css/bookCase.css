@@ -2,13 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  background-color: #444;
+  background-color: rgba(73, 73, 73, 0.8);
   margin-top: 8vh;
   width: 80%;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  border-radius: 10px; }
   .bookCase div {
-    background-color: #6189CE;
+    background-color: rgba(105, 143, 208, 0.9);
     padding: 0;
     margin-top: 2vh;
     margin-bottom: 2vh;
@@ -17,4 +18,5 @@
     text-align: center;
     line-height: 10vh;
     width: 10vh;
-    font-size: 30px; }
+    font-size: 30px;
+    border-radius: 10px; }

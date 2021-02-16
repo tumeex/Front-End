@@ -106,13 +106,14 @@
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  background-color: #444;
+  background-color: rgba(73, 73, 73, 0.8);
   margin-top: 8vh;
   width: 80%;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  border-radius: 10px; }
   .bookCase div {
-    background-color: #6189CE;
+    background-color: rgba(105, 143, 208, 0.9);
     padding: 0;
     margin-top: 2vh;
     margin-bottom: 2vh;
@@ -121,7 +122,28 @@
     text-align: center;
     line-height: 10vh;
     width: 10vh;
-    font-size: 30px; }
+    font-size: 30px;
+    border-radius: 10px; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 80vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 20px; }
+  .menu-branding {
+    height: 20vh;
+    transform: translate3d(100%, 0, 0); } }
 
 * {
   box-sizing: border-box; }
@@ -145,7 +167,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.8); }
+      background: rgba(68, 68, 68, 0.7); }
 
 h1,
 h2,
@@ -165,7 +187,8 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    background: rgba(73, 73, 73, 0.5); }
+    border-radius: 10px;
+    background: rgba(73, 73, 73, 0.4); }
 
 a {
   color: white;
@@ -191,7 +214,8 @@ main {
         transition: all 0.4s ease-out; }
   main#home {
     overflow: hidden;
-    text-align: center; }
+    text-align: center;
+    align-items: center; }
     main#home h1 {
       margin-top: 10vh; }
 
@@ -200,6 +224,8 @@ main {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(73, 73, 73, 0.5);
+  height: 5%;
+  background-color: rgba(73, 73, 73, 0.4);
   color: white;
-  text-align: center; }
+  text-align: center;
+  align-items: center; }
