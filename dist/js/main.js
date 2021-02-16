@@ -3,6 +3,7 @@ const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuBrand = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
+const body = document.querySelector('main');
 
 let showMenu = false;
 
@@ -24,4 +25,12 @@ function toggleMenu() {
         navItems.forEach(item => item.classList.remove('show'));
         showMenu = false;
     }
+}
+
+body.addEventListener('click', closeMenu);
+
+function closeMenu() {
+    
+    toggleMenu();
+    
 }
