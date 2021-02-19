@@ -2,6 +2,7 @@
 @import 'menu';
 @import 'bookCase';
 @import 'mobile';
+@import 'comments';
 
 * {
     box-sizing: border-box;
@@ -26,6 +27,7 @@ h3 {
     &.title {
         width: fit-content;
         border-bottom: 2px solid $secondary-color;
+        font-size: 34px;
     }
 
     &.lg-heading {
@@ -35,7 +37,7 @@ h3 {
     &.sm-heading {
         margin-bottom: 2rem;
         border-radius: 10px;
-        background: rgba(lighten($primary-color, 2), 0.4);
+        //background: rgba(lighten($primary-color, 2), 0.4);
     }
 }
 

@@ -30,7 +30,7 @@ function toggleMenu() {
 body.addEventListener('click', closeMenu);
 
 function closeMenu() {
-    
-    toggleMenu();
-    
+    if (showMenu) {
+        toggleMenu();
+    }
 }

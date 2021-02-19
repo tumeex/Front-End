@@ -85,7 +85,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #6189CE;
+    background-color: #6999ec;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s; }
@@ -109,21 +109,28 @@
   background-color: rgba(73, 73, 73, 0.8);
   margin-top: 8vh;
   width: 80%;
-  align-items: center;
   justify-content: center;
   border-radius: 10px; }
-  .bookCase div {
-    background-color: rgba(105, 143, 208, 0.9);
+  .bookCase .book {
     padding: 0;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
     margin-left: 2vh;
     margin-right: 2vh;
-    text-align: center;
-    line-height: 10vh;
-    width: 10vh;
-    font-size: 30px;
+    line-height: 7vh;
+    width: 15vh;
     border-radius: 10px; }
+    .bookCase .book img {
+      width: 13vh;
+      height: 18vh; }
+    .bookCase .book h3 {
+      margin: 0;
+      padding: 0;
+      font-size: 18px; }
+    .bookCase .book :hover h3 {
+      transition: all 0.4s ease-out;
+      transform: scale(1.1); }
+    .bookCase .book :hover img {
+      transition: all 0.4s ease-out;
+      transform: scale(1.2); }
 
 @media screen and (max-width: 768px) {
   main {
@@ -144,6 +151,34 @@
   .menu-branding {
     height: 20vh;
     transform: translate3d(100%, 0, 0); } }
+
+.commentArea {
+  display: flex;
+  flex-wrap: row wrap;
+  margin: auto;
+  background-color: rgba(73, 73, 73, 0.8);
+  margin-top: 5vh;
+  width: 80%;
+  border-radius: 10px;
+  overflow: auto; }
+  .commentArea .comment {
+    padding: 0;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    line-height: 5vh;
+    width: 100%;
+    border-radius: 10px; }
+    .commentArea .comment #comment {
+      display: inline-flex;
+      margin: 0;
+      padding: 0;
+      font-size: 18px; }
+    .commentArea .comment #author {
+      display: inline-flex;
+      color: #6999ec;
+      margin: 0;
+      padding: 0;
+      font-size: 14px; }
 
 * {
   box-sizing: border-box; }
@@ -167,7 +202,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.7); }
+      background: rgba(68, 68, 68, 0.5); }
 
 h1,
 h2,
@@ -178,7 +213,8 @@ h3 {
   h2.title,
   h3.title {
     width: fit-content;
-    border-bottom: 2px solid #6189CE; }
+    border-bottom: 2px solid #6999ec;
+    font-size: 34px; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
@@ -187,8 +223,7 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    border-radius: 10px;
-    background: rgba(73, 73, 73, 0.4); }
+    border-radius: 10px; }
 
 a {
   color: white;
@@ -200,7 +235,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #6189CE; }
+  color: #6999ec; }
 
 main {
   padding: 4rem;
@@ -210,7 +245,7 @@ main {
     main .icons a {
       padding: 0.5rem; }
       main .icons a:hover {
-        color: #6189CE;
+        color: #6999ec;
         transition: all 0.4s ease-out; }
   main#home {
     overflow: hidden;

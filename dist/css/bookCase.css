@@ -5,18 +5,25 @@
   background-color: rgba(73, 73, 73, 0.8);
   margin-top: 8vh;
   width: 80%;
-  align-items: center;
   justify-content: center;
   border-radius: 10px; }
-  .bookCase div {
-    background-color: rgba(105, 143, 208, 0.9);
+  .bookCase .book {
     padding: 0;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
     margin-left: 2vh;
     margin-right: 2vh;
-    text-align: center;
-    line-height: 10vh;
-    width: 10vh;
-    font-size: 30px;
+    line-height: 7vh;
+    width: 15vh;
     border-radius: 10px; }
+    .bookCase .book img {
+      width: 13vh;
+      height: 18vh; }
+    .bookCase .book h3 {
+      margin: 0;
+      padding: 0;
+      font-size: 18px; }
+    .bookCase .book :hover h3 {
+      transition: all 0.4s ease-out;
+      transform: scale(1.1); }
+    .bookCase .book :hover img {
+      transition: all 0.4s ease-out;
+      transform: scale(1.2); }

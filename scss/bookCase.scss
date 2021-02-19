@@ -7,21 +7,38 @@
     background-color: rgba(lighten($primary-color, 2), 0.8);
     margin-top: 8vh;
     width: 80%;
-    align-items: center;
     justify-content: center;
     border-radius: 10px;
 
-    div {
-        background-color: rgba(lighten($secondary-color, 2), 0.9);
+    .book {
         padding: 0;
-        margin-top: 2vh;
-        margin-bottom: 2vh;
         margin-left: 2vh;
         margin-right: 2vh;
-        text-align: center;
-        line-height: 10vh;
-        width: 10vh;
-        font-size: 30px;
+        line-height: 7vh;
+        width: 15vh;
         border-radius: 10px;
+
+        img {
+            width: 13vh;
+            height: 18vh;
+        }
+
+        h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+        }
+
+        :hover{
+            h3 {
+                @include easeO;
+                transform: scale(1.1);
+            }
+            img {
+                @include easeO;
+                transform: scale(1.2);
+            }
+        }
+        
     }
 }
