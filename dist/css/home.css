@@ -1,0 +1,72 @@
+input:focus::placeholder {
+  color: transparent;
+  transition: all 0.4s ease-out; }
+
+textarea:focus::placeholder {
+  color: transparent;
+  transition: all 0.4s ease-out; }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(73, 73, 73, 0.8); }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(114, 159, 237, 0.9); }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(114, 159, 237, 0.9); }
+
+.loginArea {
+  width: 80%;
+  margin: auto;
+  margin-top: 15%; }
+  .loginArea form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .loginArea #name {
+    background-color: rgba(73, 73, 73, 0.8);
+    line-height: 1vh;
+    margin: 1vh;
+    padding: 1vh;
+    outline: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    width: 50%;
+    text-align: center; }
+  .loginArea ::placeholder {
+    justify-content: center;
+    text-align: center;
+    color: white; }
+  .loginArea #pass {
+    width: 50%;
+    margin: 1vh;
+    padding: 1vh;
+    background-color: rgba(73, 73, 73, 0.8);
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    outline: none;
+    text-align: center; }
+  .loginArea input[type=submit] {
+    margin: 5%;
+    padding: 1vh;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    width: 50%;
+    color: white;
+    font-size: 18px;
+    background-color: rgba(114, 159, 237, 0.9);
+    cursor: pointer; }
+  .loginArea input[type=submit]:hover {
+    background-color: #729fed;
+    transition: all 0.4s ease-out; }

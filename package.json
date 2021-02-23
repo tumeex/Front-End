@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Front End Project",
   "main": "index.js",
+  "homepage": "",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },

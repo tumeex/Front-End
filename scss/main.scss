@@ -3,6 +3,7 @@
 @import 'bookCase';
 @import 'mobile';
 @import 'comments';
+@import 'home';
 
 * {
     box-sizing: border-box;
@@ -16,6 +17,10 @@ body {
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5;
+}
+
+::placeholder {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1,
@@ -60,19 +65,6 @@ main {
     padding: 4rem;
     height: 100%;
 
-    .icons {
-        margin-top: 1rem;
-
-        a {
-            padding: 0.5rem;
-
-            &:hover {
-                color: $secondary-color;
-                @include easeO();
-            }
-        }
-    }
-
     &#home {
         overflow: hidden;
         text-align: center;
@@ -80,6 +72,19 @@ main {
 
         h1 {
             margin-top: 10vh;
+        }
+    }
+}
+
+.icons {
+    margin-top: 1rem;
+
+    a {
+        padding: 0.5rem;
+
+        &:hover {
+            color: $secondary-color;
+            @include easeO();
         }
     }
 }
@@ -94,4 +99,5 @@ main {
     color: white;
     text-align: center;
     align-items: center;
+    justify-content: center;
 }

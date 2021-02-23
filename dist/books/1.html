@@ -54,6 +54,7 @@
             <div class="comment">
                 <h3 id="author">tupedd</h3>
                 <h3 id="comment">Awesome book!</h3>
+                <h3 id="rating">&#11088;&#11088;</h3>
             </div>
             <div class="comment">
                 <h3 id="author">jacke34</h3>
@@ -63,13 +64,37 @@
                 <h3 id="author">Mary4</h3>
                 <h3 id="comment">Everyone should read</h3>
             </div>
+            <div class="comment">
+                <h3 id="author">Mary4</h3>
+                <h3 id="comment">Everyone should read</h3>
+            </div>
+            <div class="comment">
+                <h3 id="author">Mary4</h3>
+                <h3 id="comment">Everyone should read</h3>
+            </div>
         </div>
+
+        <div class="leaveComment">
+            <form action="#">
+              <textarea rows="3" cols="30" maxlength="50" type="text" id="comment" name="comment" placeholder="Leave a comment"></textarea>
+          
+              <select id="rating" name="rating">
+                <option value="1" selected>&#11088;</option>
+                <option value="2">&#11088;&#11088;</option>
+                <option value="3">&#11088;&#11088;&#11088;</option>
+              </select>
+            
+              <input type="submit" value="Submit">
+            </form>
+          </div>
     </main>
 
     <div class="footer">
-        <p href="https://github.com/tumeex/Front-End">
-            <i class="fa fa-github fa-2x"></i>
-        </p>
+        <div class="icons">
+            <a href="https://github.com/tumeex/Front-End">
+                <i class="fa fa-github fa-2x"></i>
+            </a>
+        </div>
     </div>
 
     <script src="../js/main.js"></script>

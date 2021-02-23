@@ -1,3 +1,26 @@
+input:focus::placeholder {
+  color: transparent;
+  transition: all 0.4s ease-out; }
+
+textarea:focus::placeholder {
+  color: transparent;
+  transition: all 0.4s ease-out; }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(73, 73, 73, 0.8); }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(114, 159, 237, 0.9); }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(114, 159, 237, 0.9); }
+
 .bookCase {
   display: flex;
   flex-wrap: wrap;

@@ -1,0 +1,64 @@
+@import 'config';
+
+.loginArea {
+    width: 80%;
+    margin: auto;
+    margin-top: 15%;
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #name {
+        background-color: rgba(lighten($primary-color, 2), 0.8);
+        line-height: 1vh;
+        margin: 1vh;
+        padding: 1vh;
+        outline: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        width: 50%;
+        text-align: center;
+    }
+
+    ::placeholder {
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+
+    #pass {
+        width: 50%;
+        margin: 1vh;
+        padding: 1vh;
+        background-color: rgba(lighten($primary-color, 2), 0.8);
+        color: white;
+        font-size: 16px;
+        border-radius: 8px;
+        outline: none;
+        text-align: center;
+    }
+
+    input[type=submit] {
+        margin: 5%;
+        padding: 1vh;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        margin-left: 1vh;
+        margin-right: 1vh;
+        width: 50%;
+        color: white;
+        font-size: 18px;
+        background-color: rgba(lighten($secondary-color, 2), 0.9);
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: rgba(lighten($secondary-color, 2), 1);
+        @include easeO();
+    }
+}
