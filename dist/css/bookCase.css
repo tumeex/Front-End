@@ -64,6 +64,7 @@ textarea:focus::placeholder {
 .searchBar {
   margin-top: 5vh; }
   .searchBar input[type=text] {
+    outline: none;
     font-size: 28px;
     border: 0;
     background-color: rgba(73, 73, 73, 0.8);

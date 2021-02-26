@@ -54,6 +54,7 @@
     margin-top: 5vh;
 
     input[type=text] {
+        outline: none;
         font-size: 28px;
         border: 0;
         background-color: rgba(lighten($primary-color, 2), 0.8);
