@@ -1,32 +1,39 @@
 @import 'config';
 
 .bookCase {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     margin: auto;
     background-color: rgba(lighten($primary-color, 2), 0.8);
-    margin-top: 8vh;
-    width: 80%;
+    margin-top: 2vh;
+    width: fit-content;
     justify-content: center;
     border-radius: 10px;
 
     .book {
         padding: 0;
-        margin-left: 2vh;
-        margin-right: 2vh;
-        line-height: 7vh;
+        margin-left: 3vh;
+        margin-right: 3vh;
+        line-height: 8vh;
         width: 15vh;
         border-radius: 10px;
 
         img {
             width: 13vh;
-            height: 18vh;
+            height: 19vh;
         }
 
         h3 {
             margin: 0;
             padding: 0;
             font-size: 18px;
+        }
+
+        #avg {
+            margin: auto;
+            padding: 0;
+            height: 6vh;
+            width: 6vh;
         }
 
         :hover{
@@ -40,5 +47,17 @@
             }
         }
         
+    }
+}
+
+.searchBar {
+    margin-top: 5vh;
+
+    input[type=text] {
+        font-size: 28px;
+        border: 0;
+        background-color: rgba(lighten($primary-color, 2), 0.8);
+        color: white;
+        text-align: center;
     }
 }
