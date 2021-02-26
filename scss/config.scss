@@ -42,13 +42,13 @@ $bg-opacity: 0.5;
 }
 
 @mixin medLg {
-    @media screen and (min-width: 769px) and (max-width: 1300px) {
+    @media screen and (max-width: 1135px) {
         @content;
     }
 }
 
 @mixin medXl {
-    @media screen and (min-width: 1301px) {
+    @media screen and (min-width: 1136px) {
         @content;
     }
 }

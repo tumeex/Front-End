@@ -3,6 +3,10 @@
 }
 
 @include medLg {
+    .bookCase {
+        overflow: auto;
+        height: auto;
+    }
     
 }
 
@@ -36,5 +40,60 @@
 }
 
 @include medSm {
+    #home {
+        position: absolute;
+        padding: 2rem;
+    }
+
+    .lg-heading,
+    .sm-heading {
+        display: none;
+    }
+
+    .bookCase {
+        .book {
+            line-height: 15vh;
+            width: 30vh;
+            #avg {
+                width: auto;
+            }
+        }
+    }
+
+    .searchBar {
+        margin-top: 10vh;
     
+        input[type=text] {
+            font-size: 20px;
+        }
+    }
+
+    .comment {
+        #author {
+            font-size: 10px;
+        }
+        #comment {
+            font-size: 12px;
+        }
+        #rating {
+            font-size: 14px;
+        }
+    }
+
+    .leaveComment {
+        textarea {
+            width: 100%;
+        }
+        select {
+            width: 100%;
+        }
+        input[type=submit] {
+            width: 100%;
+        }
+    }
+
+    .icons {
+        font-size: 10px;
+        margin-top: 6px;
+    }
 }
