@@ -29,30 +29,6 @@ $bg-opacity: 0.5;
     }
 }
 
-@mixin medSm {
-    @media screen and (max-width: 500px) {
-        @content;
-    }
-}
-
-@mixin medMd {
-    @media screen and (max-width: 768px) {
-        @content;
-    }
-}
-
-@mixin medLg {
-    @media screen and (min-width: 769px) and (max-width: 1300px) {
-        @content;
-    }
-}
-
-@mixin medXl {
-    @media screen and (min-width: 1301px) {
-        @content;
-    }
-}
-
 input:focus::placeholder {
     color: transparent;
     @include easeO();
