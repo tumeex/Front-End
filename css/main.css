@@ -1,3 +1,8 @@
+::placeholder {
+  justify-content: center;
+  text-align: center;
+  color: white; }
+
 input:focus::placeholder {
   color: transparent;
   transition: all 0.4s ease-out; }
@@ -20,6 +25,11 @@ textarea:focus::placeholder {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(114, 159, 237, 0.9); }
+
+::placeholder {
+  justify-content: center;
+  text-align: center;
+  color: white; }
 
 input:focus::placeholder {
   color: transparent;
@@ -148,6 +158,11 @@ textarea:focus::placeholder {
 .nav-item:nth-child(3) {
   transition-delay: 0.12s; }
 
+::placeholder {
+  justify-content: center;
+  text-align: center;
+  color: white; }
+
 input:focus::placeholder {
   color: transparent;
   transition: all 0.4s ease-out; }
@@ -172,34 +187,48 @@ textarea:focus::placeholder {
   background: rgba(114, 159, 237, 0.9); }
 
 .bookCase {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   margin: auto;
   background-color: rgba(73, 73, 73, 0.8);
-  margin-top: 8vh;
-  width: 80%;
+  margin-top: 2vh;
+  width: fit-content;
   justify-content: center;
   border-radius: 10px; }
   .bookCase .book {
     padding: 0;
-    margin-left: 2vh;
-    margin-right: 2vh;
-    line-height: 7vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    line-height: 8vh;
     width: 15vh;
     border-radius: 10px; }
     .bookCase .book img {
       width: 13vh;
-      height: 18vh; }
+      height: 19vh; }
     .bookCase .book h3 {
       margin: 0;
       padding: 0;
       font-size: 18px; }
+    .bookCase .book #avg {
+      margin: auto;
+      padding: 0;
+      height: 6vh;
+      width: 6vh; }
     .bookCase .book :hover h3 {
       transition: all 0.4s ease-out;
       transform: scale(1.1); }
     .bookCase .book :hover img {
       transition: all 0.4s ease-out;
       transform: scale(1.2); }
+
+.searchBar {
+  margin-top: 5vh; }
+  .searchBar input[type=text] {
+    font-size: 28px;
+    border: 0;
+    background-color: rgba(73, 73, 73, 0.8);
+    color: white;
+    text-align: center; }
 
 @media screen and (max-width: 768px) {
   main {
@@ -220,6 +249,11 @@ textarea:focus::placeholder {
   .menu-branding {
     height: 20vh;
     transform: translate3d(100%, 0, 0); } }
+
+::placeholder {
+  justify-content: center;
+  text-align: center;
+  color: white; }
 
 input:focus::placeholder {
   color: transparent;
@@ -250,7 +284,7 @@ textarea:focus::placeholder {
   margin: auto;
   background-color: rgba(73, 73, 73, 0.8);
   margin-top: 4vh;
-  width: 80%;
+  width: fit-content;
   border-radius: 10px;
   overflow: auto;
   height: 18vh; }
@@ -334,6 +368,11 @@ textarea:focus::placeholder {
   .leaveComment input[type=submit]:hover {
     background-color: #729fed;
     transition: all 0.4s ease-out; }
+
+::placeholder {
+  justify-content: center;
+  text-align: center;
+  color: white; }
 
 input:focus::placeholder {
   color: transparent;
