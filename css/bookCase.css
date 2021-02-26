@@ -1,0 +1,52 @@
+input:focus::placeholder {
+  color: transparent;
+  transition: all 0.4s ease-out; }
+
+textarea:focus::placeholder {
+  color: transparent;
+  transition: all 0.4s ease-out; }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(73, 73, 73, 0.8); }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(114, 159, 237, 0.9); }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(114, 159, 237, 0.9); }
+
+.bookCase {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  background-color: rgba(73, 73, 73, 0.8);
+  margin-top: 8vh;
+  width: 80%;
+  justify-content: center;
+  border-radius: 10px; }
+  .bookCase .book {
+    padding: 0;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    line-height: 7vh;
+    width: 15vh;
+    border-radius: 10px; }
+    .bookCase .book img {
+      width: 13vh;
+      height: 18vh; }
+    .bookCase .book h3 {
+      margin: 0;
+      padding: 0;
+      font-size: 18px; }
+    .bookCase .book :hover h3 {
+      transition: all 0.4s ease-out;
+      transform: scale(1.1); }
+    .bookCase .book :hover img {
+      transition: all 0.4s ease-out;
+      transform: scale(1.2); }

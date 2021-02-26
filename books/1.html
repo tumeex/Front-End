@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>MyBookReview</title>
+</head>
+<body id="bg-img">
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu-branding">
+                <li class="nav-item">
+                    <h2 class="title">M<span class="text-secondary">B</span>R</h2>
+                </li>
+                
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item current">
+                    <a href="../books.html" class="nav-link">Books</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../home.html" class="nav-link">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <h1 class="lg-heading">The library</h1>
+        <h2 class="sm-heading">Give your opinion and have fun</h2>
+
+        <div class="bookCase" style="width: 50%; margin-top: 6vh;">
+            <div class="book" style="pointer-events: none;">
+                <a href="./1.html">
+                    <h3 style="transform: scale(1.1)">Harry Potter</h3>
+                    <img style="transform: scale(1.1)" src="./1.jpg" alt="Harry Potter">
+                </a>
+            </div>
+        </div>
+
+        <div class="commentArea">
+            <div class="comment">
+                <h3 id="author">tupedd</h3>
+                <h3 id="comment">Awesome book!</h3>
+                <h3 id="rating">&#11088;&#11088;</h3>
+            </div>
+            <div class="comment">
+                <h3 id="author">jacke34</h3>
+                <h3 id="comment">I liked it very much :D</h3>
+                <h3 id="rating">&#11088;&#11088;</h3>
+            </div>
+            <div class="comment">
+                <h3 id="author">Mary4</h3>
+                <h3 id="comment">Everyone should read</h3>
+                <h3 id="rating">&#11088;&#11088;</h3>
+            </div>
+            <div class="comment">
+                <h3 id="author">Dill32</h3>
+                <h3 id="comment">I hated this</h3>
+                <h3 id="rating">&#11088;</h3>
+            </div>
+            <div class="comment">
+                <h3 id="author">Mary4</h3>
+                <h3 id="comment">Everyone should read</h3>
+                <h3 id="rating">&#11088;&#11088;&#11088;</h3>
+            </div>
+        </div>
+
+        <div class="leaveComment">
+            <form action="#">
+              <textarea rows="3" cols="30" maxlength="50" type="text" id="comment" name="comment" placeholder="Leave a comment"></textarea>
+          
+              <select id="rating" name="rating">
+                <option value="1" selected>&#11088;</option>
+                <option value="2">&#11088;&#11088;</option>
+                <option value="3">&#11088;&#11088;&#11088;</option>
+              </select>
+            
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+    </main>
+
+    <div class="footer">
+        <div class="icons">
+            <a href="https://github.com/tumeex/Front-End">
+                <i class="fa fa-github fa-2x"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
